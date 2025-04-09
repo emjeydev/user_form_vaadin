@@ -1,7 +1,10 @@
 package dev.emjey.user_form_vaadin.view;
 
+import com.vaadin.flow.component.UI;
 import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.datepicker.DatePicker;
+import com.vaadin.flow.component.dependency.JavaScript;
+import com.vaadin.flow.component.dependency.JsModule;
 import com.vaadin.flow.component.formlayout.FormLayout;
 import com.vaadin.flow.component.html.H1;
 import com.vaadin.flow.component.notification.Notification;
@@ -17,6 +20,7 @@ import jakarta.annotation.security.PermitAll;
 import java.sql.Date;
 
 @Route(value = "register", layout = MainLayout.class)
+@JsModule("./js/script.js")
 @PageTitle("Registration")
 @PermitAll
 public class RegistrationView extends VerticalLayout {
